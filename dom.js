@@ -9,3 +9,7 @@ for (var i = 0; i < item.length; i++) {
   item[i].style.backgroundColor = "yellow";
 }
 item[2].style.backgroundColor = "green";
+var new_item = document.getElementsByClassName("list-new-item");
+var new_item_tag = document.getElementsByTagName("list-new-item");
+new_item.style.backgroundcolour = "red";
+new_item_tag.style.fontWeight = "bold";
