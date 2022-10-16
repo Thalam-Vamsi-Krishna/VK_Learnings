@@ -16,6 +16,14 @@ var odd = document.querySelectorAll("li:nth-child(odd)");
 var even = document.querySelectorAll("li:nth-child(even)");
 even[0].style.color = "green";
 for (var i = 0; i < odd.length; i++) {
-  odd[i].style.backgroundColor = "green";
-  even[i].style.backgroundColor = "red";
+  odd[i].style.backgroundColor = "#90ee90";
+  even[i].style.backgroundColor = "#ffcccb";
 }
+//manipulating the DOM
+var itemList = document.querySelector("#items");
+itemList.parentElement.style.backgroundColor = "#f4f4f4";
+itemList.childNodes[3].textContent = "Item 2";
+itemList.childNodes[5].textContent = "Item 3";
+itemList.firstElementChild.textContent = "Item 1";
+itemList.firstChild.textContent = "Note : Add atleast 2 items";
+itemList.lastElementChild.textContent = "Item 4";
